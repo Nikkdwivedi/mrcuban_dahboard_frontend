@@ -2,7 +2,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const url = import.meta.env.VITE_APP_BASE_URL;
-const localURL = "https://mrcuban-dashboard-backend.onrender.com/api/v1"
+const localURL = import.meta.env.VITE_APP_BASE_FORNTEND_URL;
 
 export const FetchDrivers = async (current) => {
   try {
